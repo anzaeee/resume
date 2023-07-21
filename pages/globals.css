@@ -1,0 +1,32 @@
+/* global.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Light mode styles */
+.light-mode body {
+  background-color: #ffffff;
+  color: #111827;
+}
+
+.light-mode .bg-purple-light {
+  background-color: #a5b4fc;
+}
+
+.light-mode button {
+  color: #60a5fa;
+}
+
+/* Dark mode styles */
+.dark-mode body {
+  background-color: #111827;
+  color: #ffffff;
+}
+
+.dark-mode .bg-purple-dark {
+  background-color: #6b46c1;
+}
+
+.dark-mode button {
+  color: #a5b4fc;
+}
