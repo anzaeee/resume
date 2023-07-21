@@ -18,7 +18,7 @@ const Home = () => {
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.5 }}
-          className="text-4xl font-bold mt-8 text-center" 
+          className="text-4xl font-bold mt-8 text-center"
         >
           Your Name
         </motion.h1>
@@ -26,7 +26,7 @@ const Home = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.7 }}
-          className="text-xl mt-2 text-center" 
+          className="text-xl mt-2 text-center"
         >
           Web Developer
         </motion.p>
@@ -38,8 +38,9 @@ const Home = () => {
         >
           <motion.a
             href="#contact"
-            whileHover={{ scale: 1.1 }} 
-            whileTap={{ scale: 0.9 }} 
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.9 }}
+            className="bg-purple inline-block py-2 px-4 rounded-lg"
           >
             Contact Me
           </motion.a>
