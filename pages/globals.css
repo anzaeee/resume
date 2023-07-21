@@ -9,12 +9,12 @@
   color: #111827;
 }
 
-.light-mode .bg-purple-light {
-  background-color: #a5b4fc;
+.light-mode .bg-purple {
+  background-color: #a855f7;
 }
 
 .light-mode button {
-  color: #60a5fa;
+  color: #3b82f6;
 }
 
 /* Dark mode styles */
@@ -23,10 +23,10 @@
   color: #ffffff;
 }
 
-.dark-mode .bg-purple-dark {
-  background-color: #6b46c1;
+.dark-mode .bg-purple {
+  background-color: #805ad5;
 }
 
 .dark-mode button {
-  color: #a5b4fc;
+  color: #c4b5fd;
 }

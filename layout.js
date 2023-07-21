@@ -6,6 +6,7 @@ const Layout = ({ children }) => {
   const [darkMode, setDarkMode] = useState(false);
 
   useEffect(() => {
+    // Check if dark mode is set in local storage
     const isDarkMode = localStorage.getItem('darkMode');
     if (isDarkMode === 'true') {
       setDarkMode(true);
@@ -13,9 +14,10 @@ const Layout = ({ children }) => {
   }, []);
 
   useEffect(() => {
-    localStorage.setItem('darkMode', darkMode);
-    const className = darkMode ? 'dark-mode' : 'light-mode';
-    document.body.className = className;
+    // Save the dark mode state in local storage
+    localStorage.setItem('darkMode', darkMode.toString());
+    // Apply the dark mode class to the body
+    document.body.classList.toggle('dark-mode', darkMode);
   }, [darkMode]);
 
   const toggleDarkMode = () => {
